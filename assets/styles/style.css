@@ -1,3 +1,12 @@
+:root {
+  --main:  #D45649;
+  --main-light: #eb695b;
+  --button-gray: #CCCFD7;
+  --text-darker: #333;
+  --text-lighter: #999;
+  --text-white: #fff;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +17,8 @@
 body {
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
 }
 
 h1, h2 {
@@ -16,18 +27,18 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   font-weight: bolder;
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 .nav-bar {
-  background: #D45649;
-  color: #fff;
+  background: var(--main);
+  color: var(--text-white);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,7 +53,7 @@ h2 {
 .nav-bar .logo {
   width: 100%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .nav-bar-list {
@@ -50,36 +61,35 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid green;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 2rem;
+  margin-top: 1rem;
 }
 
 .nav-bar-item .sm-none {
   display: none;
 }
 
-.container {
-  height: 100vh;
+.nav-bar-link {
+  color: var(--text-white);
+  -webkit-transition: color .1s ease-in;
+  transition: color .1s ease-in;
+}
+
+.nav-bar-link:hover {
+  color: var(--text-lighter);
+}
+
+.header-content {
+  height: 522px;
   width: 100%;
   position: relative;
-  border: 1px solid red;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
-.container-video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-}
-
-.container-search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,6 +97,117 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid rebeccapurple;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header-content-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header-content-media {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: #222;
+  opacity: .9;
+  z-index: 1;
+}
+
+.header-content-info {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-content-heading {
+  margin-bottom: 1rem;
+  color: var(--text-white);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header-content-button {
+  z-index: 2;
+  text-align: center;
+  background-color: var(--button-gray);
+  padding: 10px;
+  width: 25%;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  border-radius: 3px;
+  color: var(--text-darker);
+  text-decoration: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.header-content-button:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.search {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 15px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 8px;
+}
+
+.search-label {
+  text-transform: uppercase;
+  color: var(--text-darker);
+}
+
+.search-input, .search-button {
+  padding: 10px;
+  margin-bottom: .5rem;
+  outline: none;
+}
+
+.search-input :focus {
+  outline: none;
+}
+
+.search-button {
+  color: var(--text-white);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--main);
+  border: 1px solid var(--main);
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.search-button:hover {
+  background-color: var(--main-light);
+  -webkit-box-shadow: 1px 1px 5px #666;
+          box-shadow: 1px 1px 5px #666;
 }
 /*# sourceMappingURL=style.css.map */
