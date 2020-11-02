@@ -11,6 +11,10 @@
     --text-white : #fff;
 }
 
+@mixin transform-uppercase {
+    text-transform: uppercase;
+}
+
 @mixin text-white-center {
     color: var(--text-white);
     text-transform: uppercase;
@@ -28,7 +32,6 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
-}
 
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
@@ -45,6 +48,7 @@ h2 {
     font-weight: bold;
 }
 
+// navbar
 .nav-bar {
 background: var(--main);
 color: var(--text-white);
@@ -84,6 +88,7 @@ flex-wrap: wrap;
 
 }
 
+//header-content 
 .header-content {
     height: 522px;
     width: 100%;
@@ -112,7 +117,7 @@ flex-wrap: wrap;
         position: absolute;
         top: 0;
         left: 0;
-        width: 100vw;
+        width: 100%;
         height: 100%;
         background: #222;
         opacity: .9;
@@ -122,16 +127,15 @@ flex-wrap: wrap;
     &-info {
          z-index: 2; 
         display:flex;
-        flex-direction: column;
-        // border: 1px solid rebeccapurple
-}
+        flex-direction: column
+   }
 
-&-heading {
+   &-heading {
     margin-bottom: 1rem;
     @include text-white-center;
-}
+  }
 
-&-button {
+   &-button {
     z-index: 2;
     text-align:center;
     background-color: var(--button-gray);
@@ -146,11 +150,12 @@ transition: all .2s;
     &:hover {
         transform: translateY(-4px);
     }
-}
+  }
 
 
 }
 
+// search
 .search {
     background-color: rgba(255, 255, 255, .5);
     padding: 15px 8px;
@@ -160,7 +165,7 @@ transition: all .2s;
     border-radius: 8px;
 
     &-label {
-        text-transform: uppercase;
+        @include transform-uppercase;
         color: var(--text-darker);
     }
 
@@ -190,3 +195,39 @@ transition: all .2s;
 
    
 }
+
+// section how it works
+
+.how-works {
+    padding: 3rem 0;
+
+    &-heading {
+        color: var(--main);
+        @include transform-uppercase;
+        text-align:center;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+
+        img {
+            width: 6rem;
+            height: 6rem
+        }
+    }
+
+    &-heading-tertiary {
+        @include transform-uppercase;
+        color: var(--text-darker);
+        margin: 1rem 0;
+    }
+
+    &-para {
+        text-align: center;
+    }
+
+
+}}
