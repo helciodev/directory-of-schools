@@ -21,6 +21,13 @@
     text-align: center;
 }
 
+@mixin text-dark-center {
+    color: var(--text-darker);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
 * {
     padding:0;
     margin: 0;
@@ -48,6 +55,9 @@ h2 {
     font-weight: bold;
 }
 
+.text-center {
+    text-align:center;
+}
 // navbar
 .nav-bar {
 background: var(--main);
@@ -61,7 +71,14 @@ flex-wrap: wrap;
     width: 100%;
     text-align: center;
     font-size: 3rem;
+
+    a {
+        text-decoration: none;
+        color:#fff  
+    }
  }
+
+ 
 
  &-list {
      list-style: none;
@@ -140,7 +157,7 @@ flex-wrap: wrap;
     text-align:center;
     background-color: var(--button-gray);
     padding: 10px;
-    width: 25%;
+    width: 34%;
     margin-top: 3rem;
     margin-left: 3rem;
     border-radius: 3px;
@@ -196,6 +213,9 @@ transition: all .2s;
    
 }
 
+.search-main {
+    margin: 3rem 0;
+}
 // section how it works
 
 .how-works {
@@ -227,6 +247,7 @@ transition: all .2s;
 
     &-para {
         text-align: center;
+        padding: 0 1rem;
     }
 
 }}
@@ -248,7 +269,7 @@ transition: all .2s;
     }
 
     &-action {
-        width:50%;
+        width:75%;
     }
     &-para {
         margin-bottom: 1rem;
@@ -285,7 +306,7 @@ transition: all .2s;
 
 .footer {
     background: #000;
-    padding: 2rem 0;
+    padding: 2rem .3rem;
     color:#fff;
 
     &-list {
@@ -349,7 +370,34 @@ transition: all .2s;
     }
 
     &-subscribe {
+        
+        &-form {
+            display: flex;
+        }
+        
 
+        &-input {
+            width: 70%;
+            text-align: center;
+
+            &:focus {
+                outline: none;
+                border: 1px solid #555;
+            }
+
+            
+        }
+        &-btn {
+            background-color: #666;
+            cursor: pointer;
+            border: 1px solid #555;
+            outline: none;
+            padding: 5px;
+
+            &:hover {
+                color:#fff;
+            }
+        }
     }
     &-contact {
         
@@ -377,12 +425,42 @@ text-decoration:none ;
     &-social-link {
         text-decoration: none;
         color: #555;
+        font-size: 12px;
     }
     span {
         font-size: 12px;
     }
 
     &-madeby,&-future {
-        margin-right: 1rem;
+        margin-right: 5px;
+    }
+}
+
+.search-form {
+    background-color:#EEE;
+    padding: 2rem 1rem;
+    &-title {
+        margin-bottom: 2rem;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 63%;
+    margin: 0 auto;
+
+    &-label {
+    @include text-dark-center();
+    margin-bottom: .5rem 0;
+    }
+
+    &-input, &-select {
+        padding: 7px;
+        margin-bottom: .5rem;
+
+        &:focus {
+            outline-color:#6CABDE;
+        }
     }
 }
