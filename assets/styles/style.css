@@ -509,4 +509,48 @@ body .how-works-para {
 .form-input:focus, .form-select:focus {
   outline-color: #6CABDE;
 }
+
+.sign-up-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin: 2.5rem auto;
+}
+
+.sign-up-form > * {
+  display: block;
+}
+
+.sign-up-form-label {
+  color: var(--text-darker);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sign-up-form-input {
+  padding: 10px;
+  background-color: #DEE2E3;
+  border: 1px solid #888;
+}
+
+.sign-up-form-input:focus {
+  outline-color: aquamarine;
+}
+
+.sign-up-form-btns {
+  padding: 1rem 0;
+}
+
+.sign-up-form-btns .sign-in {
+  background-color: transparent;
+}
+
+.sign-up-form-btns .search-button {
+  margin-top: 1rem;
+}
 /*# sourceMappingURL=style.css.map */

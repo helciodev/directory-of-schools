@@ -28,6 +28,12 @@
     font-weight: bold;
 }
 
+@mixin  text-dark-left {
+    color: var(--text-darker);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 * {
     padding:0;
     margin: 0;
@@ -461,6 +467,42 @@ text-decoration:none ;
 
         &:focus {
             outline-color:#6CABDE;
+        }
+    }
+}
+
+.sign-up-form {
+display: flex;
+flex-direction: column;
+width:50%;
+margin: 2.5rem auto;
+    >* {
+        display: block;
+    }
+    &-label {
+       @include text-dark-left(); 
+    }
+
+    &-input {
+        padding: 10px;
+        background-color:#DEE2E3;
+        border: 1px solid #888;
+
+        &:focus {
+            outline-color   : aquamarine;
+            
+        }
+    }
+
+    &-btns {
+        padding: 1rem 0;
+
+        .sign-in {
+            background-color: transparent;
+        }
+
+        .search-button {
+            margin-top: 1rem;
         }
     }
 }
