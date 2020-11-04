@@ -18,18 +18,18 @@
     <header class="header"> 
         <nav class="nav-bar">
             <div class="logo"> <a href="../index.html">
-             <img src="../assets/images/logo.png" alt="near school logo">
-            </a> 
-        </div>
+                <img src="../assets/images/logo.png" alt="near school logo">
+               </a> 
+           </div>
             <ul class="nav-bar-list">
                 <li class="nav-bar-item">
-                    <a href="#" class="nav-bar-link"> 
+                    <a href="pages/search.html" class="nav-bar-link"> 
                     <span class="iconify" data-icon="ant-design:search-outlined" data-inline="false"></span> 
                     <span class="sm-none">schools</span> 
                 </a>
             </li>
                 <li class="nav-bar-item">
-                    <a href="signup.html" class="nav-bar-link"> 
+                    <a href="pages/signup.html" class="nav-bar-link"> 
                         <span class="iconify" data-icon="bytesize:user" data-inline="false"></span> 
                         <span class="sm-none">about</span>
                     </a>
@@ -40,13 +40,32 @@
                      </span> <span class="sm-none">blog</span> 
                     </a>
                 </li>
-                <li class="nav-bar-item"><a href="#" class="nav-bar-link">
-                    <span class="iconify" data-icon="codicon:three-bars" data-inline="false"></span>
+                <li class="nav-bar-item"><a href="#main-menu"
+                    class="menu-toggle nav-bar-link"
+                    id="main-menu-toggle"
+                    aria-label="opens main menu">
+                    <span class="iconify" data-icon="codicon:three-bars" aria-hidden="true" data-inline="false"></span>
                     </span> <span class="sm-none">more</span> 
                 </a>
             </li>
             </ul>
         </nav>
+        <nav id="main-menu" class="main-menu" aria-label="main menu">
+            <a
+              href="#main-menu-toggle"
+              class="menu-close"
+              aria-label="closes main menu"
+            >
+            <span class="iconify" data-icon="codicon:chrome-close" data-inline="false" aria-hidden="true"></span>
+            </a>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#HowItWorks">How it Works</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Know More</a></li>
+            </ul>
+          </nav>
+          <a href="#main-menu-toggle" class="backdrop" hidden></a>
     </header>
 
     <main class="main search">
@@ -364,21 +383,33 @@
             <p class="results-schools-school-p">
                 Elementary school John Newman
             </p>
+            <a href="school-result.html" class="results-schools-school-more">
+                click for details
+            </a>
         </div>
         <div class="results-schools-school school-2">
             <p class="results-schools-school-p">
                 Elementary Ezakiel Martin
             </p>
+            <a href="school-result.html" class="results-schools-school-more">
+                click for details
+            </a>
         </div>
         <div class="results-schools-school school-3">
             <p class="results-schools-school-p">
                 Elementary school Michael Spencer
             </p>
+            <a href="school-result.html" class="results-schools-school-more">
+                click for details
+            </a>
         </div>
         <div class="results-schools-school school-4">
             <p class="results-schools-school-p">
                 Elementary school Nathaniel Makwene
             </p>
+            <a href="school-result.html" class="results-schools-school-more">
+                click for details
+            </a>
         </div>
     </div>
 </section>

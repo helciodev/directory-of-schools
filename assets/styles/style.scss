@@ -43,8 +43,8 @@
 body {
     font-size:  1rem;
     font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-    overflow-x: hidden;
+    line-height: 1.5
+}
 
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
@@ -326,7 +326,7 @@ transition: all .2s;
         padding: 0 1rem;
     }
 
-}}
+}
 
 .middle {
     &-item {
@@ -648,10 +648,11 @@ margin: 2.5rem auto;
 
         &-school {
             height: 250px;
-            width: 300px;
+            width: 350px;
             display: flex;
-            justify-content: center;
-            align-items:flex-end;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items:center;
             padding-bottom: 1rem;
 
             
@@ -660,17 +661,32 @@ margin: 2.5rem auto;
                 font-weight: bold;
                 transition: all .2s ease;
                 z-index: 4;
-                background: rgba(0,0,0,.65);
+                background: rgba(0,0,0,.90);
                 display: none;
                 height: 15%;
+                margin-bottom: 1rem;
+
             }
 
             
-            &:hover > &-p {
-                display: block;
+           
+        &-more {
+            text-decoration: none;
+            background-color: var(--main);
+            padding: 6px;
+            color:#fff;
+            transition: all .2s;
+            display: none;
+
+            &:hover {
+             transform: translateY(2px);
+            }
         }
 
+        &:hover > &-p, &:hover > &-more {
+            display: block;
     }
+    } 
 
 }
 
@@ -693,4 +709,64 @@ margin: 2.5rem auto;
     background: url(../images/school-4.jpg) ;
     background-size: cover;
 }
+}
+
+.main-school-result {
+display: flex;
+align-items: center;
+flex-direction: column;
+padding: 3rem 2rem;
+}
+
+.school-result {
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.023),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.033),
+  0 12.5px 10px rgba(0, 0, 0, 0.041),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.048),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.057),
+  0 100px 80px rgba(0, 0, 0, 0.07)
+;
+width: 80%;
+}
+
+.details {
+display: flex;
+flex-direction: column;
+padding: 1rem;
+justify-content: flex-end;
+
+
+&-item {
+    border: 1px solid #999;
+    margin-bottom: .5rem;
+    padding: .5rem;
+    text-align:center;
+
+    &-first, &-second{
+        font-weight: bold;
+    }
+
+    &-first {
+        color: #333;
+    }
+
+    &-second {
+        color: #81B6E2;
+    }
+}
+
+&-btn {
+    border-radius: 0;
+    align-self: flex-end;
+}
+}
+
+.result-info {
+    margin-top: 4rem;
+}
+
+
+@media (min-width: 780px) {
+
 }
