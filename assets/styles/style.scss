@@ -501,7 +501,7 @@ text-decoration:none ;
     &-social-link {
         text-decoration: none;
         color: #555;
-        font-size: 12px;
+        font-size: 1.2rem;
     }
     span {
         font-size: 12px;
@@ -578,14 +578,16 @@ text-decoration:none ;
     }
 }
 
-.sign-up-form {
+.sign-up-form { 
 display: flex;
 flex-direction: column;
 width:50%;
 margin: 2.5rem auto;
+
     >* {
         display: block;
     }
+
     &-label {
        @include text-dark-left(); 
     }
@@ -602,10 +604,21 @@ margin: 2.5rem auto;
     }
 
     &-btns {
-        padding: 1rem 0;
+       margin-top: .5rem;
+
+        .sign-in, .search-button {
+            cursor: pointer;
+        }
 
         .sign-in {
             background-color: transparent;
+            border:none;
+            font-size: inherit;
+            font-weight: 400;
+
+            &:hover {
+                color:#777;
+            }
         }
 
         .search-button {

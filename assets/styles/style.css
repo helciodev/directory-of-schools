@@ -529,7 +529,7 @@ body .how-works-para {
 .footer-bottom-social-link {
   text-decoration: none;
   color: #555;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .footer-bottom span {
@@ -662,11 +662,22 @@ body .how-works-para {
 }
 
 .sign-up-form-btns {
-  padding: 1rem 0;
+  margin-top: .5rem;
+}
+
+.sign-up-form-btns .sign-in, .sign-up-form-btns .search-button {
+  cursor: pointer;
 }
 
 .sign-up-form-btns .sign-in {
   background-color: transparent;
+  border: none;
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.sign-up-form-btns .sign-in:hover {
+  color: #777;
 }
 
 .sign-up-form-btns .search-button {
