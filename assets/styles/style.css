@@ -92,6 +92,74 @@ body .nav-bar-link:hover {
   color: var(--text-lighter);
 }
 
+body .main-menu {
+  position: fixed;
+  display: none;
+  right: -200px;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: visible;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+body .main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 2.5em;
+  min-height: 100%;
+  width: 200px;
+  background-color: #1a1a1a;
+}
+
+body .main-menu a {
+  display: block;
+  padding: .75rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #383838;
+}
+
+body .main-menu a:hover,
+body .main-menu a:focus {
+  background: var(--main);
+}
+
+body .main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+body .main-menu:target {
+  display: block;
+  right: 0;
+  outline: none;
+}
+
+body .main-menu:target .menu-close {
+  z-index: 1001;
+}
+
+body .main-menu:target ul {
+  position: relative;
+  z-index: 1000;
+}
+
+body .main-menu:target + .backdrop {
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.85);
+  cursor: default;
+}
+
 body .header-content {
   height: 522px;
   width: 100%;
@@ -493,6 +561,16 @@ body .how-works-para {
   margin: 0 auto;
 }
 
+.form-selection-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .form-label {
   color: var(--text-darker);
   text-transform: uppercase;
@@ -508,6 +586,47 @@ body .how-works-para {
 
 .form-input:focus, .form-select:focus {
   outline-color: #6CABDE;
+}
+
+.form-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-btn-info, .form-btn-warning {
+  padding: 6px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.form-btn-info {
+  background: #457DB4;
+  margin-right: 10px;
+}
+
+.form-btn-info:hover {
+  background: #3d86ce;
+}
+
+.form-btn-warning {
+  background: #E5AB5B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-btn-warning:hover {
+  background: #e9a23f;
+}
+
+.form-btn-warning-icon {
+  margin-right: 4px;
 }
 
 .sign-up-form {
@@ -552,5 +671,81 @@ body .how-works-para {
 
 .sign-up-form-btns .search-button {
   margin-top: 1rem;
+}
+
+.results-heading {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.results-schools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.results-schools :not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.results-schools-school {
+  height: 250px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 1rem;
+}
+
+.results-schools-school-p {
+  color: var(--text-white);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.65);
+  display: none;
+  height: 15%;
+}
+
+.results-schools-school:hover > .results-schools-school-p {
+  display: block;
+}
+
+.results .school-1 {
+  background: url(../images/school-1.jpg);
+  background-size: cover;
+}
+
+.results .school-2 {
+  background: url(../images/school-2.jpg);
+  background-size: cover;
+}
+
+.results .school-3 {
+  background: url(../images/school-3.jpg);
+  background-size: cover;
+}
+
+.results .school-4 {
+  background: url(../images/school-4.jpg);
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="apple-touch-icon" sizes="180x180" href=".assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href=".assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href=".assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href=".assets/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 
@@ -17,10 +24,10 @@
 <body>
     <header class="header"> 
         <nav class="nav-bar">
-            <div class="logo"> <a href="#">
-                near school
-            </a> 
-        </div>
+            <div class="logo"> <a href="../index.html">
+                <img src="./assets/images/logo.png" alt="near school logo">
+               </a> 
+           </div>
             <ul class="nav-bar-list">
                 <li class="nav-bar-item">
                     <a href="pages/search.html" class="nav-bar-link"> 
@@ -40,17 +47,35 @@
                      </span> <span class="sm-none">blog</span> 
                     </a>
                 </li>
-                <li class="nav-bar-item"><a href="#" class="nav-bar-link">
-                    <span class="iconify" data-icon="codicon:three-bars" data-inline="false"></span>
+                <li class="nav-bar-item"><a href="#main-menu"
+                    class="menu-toggle nav-bar-link"
+                    id="main-menu-toggle"
+                    aria-label="opens main menu">
+                    <span class="iconify" data-icon="codicon:three-bars" aria-hidden="true" data-inline="false"></span>
                     </span> <span class="sm-none">more</span> 
                 </a>
             </li>
             </ul>
         </nav>
-
+        <nav id="main-menu" class="main-menu" aria-label="main menu">
+            <a
+              href="#main-menu-toggle"
+              class="menu-close"
+              aria-label="closes main menu"
+            >
+            <span class="iconify" data-icon="codicon:chrome-close" data-inline="false" aria-hidden="true"></span>
+            </a>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#HowItWorks">How it Works</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Know More</a></li>
+            </ul>
+          </nav>
+          <a href="#main-menu-toggle" class="backdrop" hidden></a>
         <div class="header-content">
             <div class="header-content-video-container">
-            <video class="header-content-media" src="./assets/media/Girl-In-School-1.m4v" muted loop="true", autoplay></video>
+            <video class="header-content-media" src="./assets/media/Pexels Videos 1580507.mp4" muted loop="true", autoplay></video>
             </div>
 <div class="header-content-overlay"></div>
             <div class="header-content-info">
@@ -192,8 +217,7 @@
             </li>
             <li class="footer-item footer-logo">
                 <a href="#" class="footer-link">
-                    near 
-                    school
+                    <img src="./assets/images/pin 1.png" alt="pin representing near school logo ">
                 </a>
             </li>
             <li class="footer-item footer-fb">

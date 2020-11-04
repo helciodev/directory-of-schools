@@ -111,6 +111,76 @@ flex-wrap: wrap;
 
 }
 
+// main-nav 
+.main-menu {
+    position: fixed;
+    display: none;
+    right: -200px;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: visible;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  .main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 2.5em;
+    min-height: 100%;
+    width: 200px;
+    background-color: #1a1a1a;
+  }
+
+  .main-menu a {
+    display: block;
+    padding: .75rem;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #383838;
+  }
+
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: var(--main);
+    // text-decoration: underline;
+  }
+
+  .main-menu .menu-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+//   makes main-menu appear on the click
+  .main-menu:target {
+    display: block;
+    right: 0;
+    outline: none;
+  }
+
+  .main-menu:target .menu-close {
+    z-index: 1001;
+  }
+  
+  .main-menu:target ul {
+    position: relative;
+    z-index: 1000;
+  }
+
+// as main menu is visible this makes the backdrop visible as well
+  .main-menu:target + .backdrop {
+    position: fixed;
+    display: block;  
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: rgba(0,0,0,.85);
+    cursor: default;
+  }
 //header-content 
 .header-content {
     height: 522px;
@@ -456,6 +526,10 @@ text-decoration:none ;
     width: 63%;
     margin: 0 auto;
 
+    &-selection-container {
+        display: flex;
+        flex-direction: column;
+    }
     &-label {
     @include text-dark-center();
     margin-bottom: .5rem 0;
@@ -467,6 +541,39 @@ text-decoration:none ;
 
         &:focus {
             outline-color:#6CABDE;
+        }
+    }
+
+    &-buttons {
+        display: flex;
+    }
+
+    &-btn-info, &-btn-warning {
+        padding: 6px;
+        text-decoration: none;
+        text-align:center;
+        color:#fff;
+        border-radius: 5px;
+    }
+
+    &-btn-info {
+        background: #457DB4;
+        margin-right: 10px;
+        &:hover {
+            background: #3d86ce;
+        }
+    }
+
+    &-btn-warning {
+        background:#E5AB5B;
+        display: flex;
+        align-items: center;
+        &:hover {
+        background:#e9a23f;
+
+        }
+        &-icon {
+            margin-right: 4px;
         }
     }
 }
@@ -505,4 +612,72 @@ margin: 2.5rem auto;
             margin-top: 1rem;
         }
     }
+}
+
+.results {
+
+
+    &-heading {
+        text-align:center;
+        padding: 2rem 0;
+    }
+
+    &-schools {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        :not(:last-of-type) {
+            margin-bottom: 2rem;
+        }
+
+        &-school {
+            height: 250px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items:flex-end;
+            padding-bottom: 1rem;
+
+            
+            &-p {
+                @include text-white-center();
+                font-weight: bold;
+                transition: all .2s ease;
+                z-index: 4;
+                background: rgba(0,0,0,.65);
+                display: none;
+                height: 15%;
+            }
+
+            
+            &:hover > &-p {
+                display: block;
+        }
+
+    }
+
+}
+
+.school-1 {
+    background: url(../images/school-1.jpg) ;
+    background-size: cover;
+}
+
+.school-2 {
+    background: url(../images/school-2.jpg) ;
+    background-size: cover;
+}
+
+.school-3 {
+    background: url(../images/school-3.jpg) ;
+    background-size: cover;
+}
+
+.school-4 {
+    background: url(../images/school-4.jpg) ;
+    background-size: cover;
+}
 }
