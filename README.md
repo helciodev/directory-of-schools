@@ -1,26 +1,17 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-# Newsweek homepage clone
-This project consists of replicating the The newsweek site home page putting emphasis on using the css framework Bootstrap and how the page behaves differently depending on the size of the screen where the website is rendered.
+# Near School project
+This project consists of me as student apply everything I learn so far in HTML and CSS to recreate design from real designers, adding some personal touch, and having the TSE as my client.
 
-**Mobile view screenShot**
+[!](assets/images/screenshot.png)
 
-![moblie view](assets/images/mobile-view.png)
-
-**Tablet view screenShot**
-
-![tablet view](assets/images/tablet-view.png)
-
-**Laptop view screenShot**
-
-![desktop view](assets/images/desktop-view.png)
-
-## Sample of The Next Web Page Website Clone with the following features:
+## This project includes the following features:
 
 - Navigation Bar
+- a banner with a playing video
 - Main section
-- Articles
+- search page, create and sign in page and a page with the school details
 - Footer
 
 ## Built With
@@ -32,13 +23,9 @@ This project consists of replicating the The newsweek site home page putting emp
 
 ## Live Demo
 
-[Live Demo Link](https://helciodev.github.io/newsweek-site-clone/)
+[Live Demo Link](https://helciodev.github.io/directory-of-schools/)
 
 **See the page via the link above**
-
-**See the Source Page via the link below**
-
-[Source Page Link](https://newsweek.com/)
 
 ## Getting Started
 
@@ -71,6 +58,15 @@ To get a local copy of this repository up and running follow these simple steps:
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Thanks to [Mathew Njuguna and others on Behance](https://www.behance.net/mathewnjuguna) for this[ the design](https://www.behance.net/gallery/25563385/PatashuleKE)
+- icons used from [iconify](https://iconify.design/)
+- Font Family  **Roboto and Montserrat** from [google fonts](https://fonts.google.com/)
+- [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) for the amazing and straightforward tutorial on how make a video background [video tutorial](https://www.youtube.com/watch?v=Xy3GlrddZFI&t=1002s)
+- Images and video source in the website is [pexels ](https://www.pexels.com/) from authors [Adailton Batista](https://www.pexels.com/@adailtonbatista), [ Agung Pandit Wiguna ](https://www.pexels.com/@panditwiguna) [Julia M Cameron](https://www.pexels.com/@julia-m-cameron), [Matthis Volquardsen](https://www.pexels.com/@einfoto), [pixbay](https://www.pexels.com/@pixbay), 
+-intro on how to navigate [introJs](https://introjs.com/),
 
 ## 📝 License
 
