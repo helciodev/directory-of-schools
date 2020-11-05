@@ -7,18 +7,21 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 
+     <!-- introjs css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/3.0.1/introjs.min.css" integrity="sha512-fsq7ym+bMq7ecs277R2a3QDPxF+JIwNNnkPfj9rIKDUyqrbXDnICZj/cCLcP3bKh3+jsCBnBR7BZJShOmELL0Q==" crossorigin="anonymous" />
+
     <!-- iconify -->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     
     <!-- custom css -->
-    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <title>search</title>
 </head>
-<body>
+<body onload="introJs().start()">
     <header class="header"> 
         <nav class="nav-bar">
             <div class="logo"> <a href="../index.html">
-                <img src="../assets/images/logo.png" alt="near school logo">
+                <img src="./assets/images/logo.png" alt="near school logo">
                </a> 
            </div>
             <ul class="nav-bar-list">
@@ -68,11 +71,11 @@
           <a href="#main-menu-toggle" class="backdrop" hidden></a>
     </header>
 
-    <main class="main search">
-<div class="search-form">
-    <h2 class="search-form-title text-center">
+    <main class="main-search">
+<div class="search-form" data-intro="to know more about the school jus hover over the image">
+    <h1 class="search-form-title text-center">
         Filter by name, country, education system, school level:
-    </h2>
+    </h1>
     <form action="#" class="search-form-form form">
         <div class="form-selection-container">
             <label for="name" class="form-label">school name:</label>
@@ -373,7 +376,7 @@
     </form>
 </div>
 
-<section class="results">
+<section class="results" >
     <h2 class="results-heading">
         search results found 4 schools:
     </h2>
@@ -511,5 +514,7 @@
         </div>
     </footer>
 
+     <!-- introjs js -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/3.0.1/intro.min.js" integrity="sha512-Y3bwrs/uUQhiNsD26Mpr5YvfG18EY0J+aNxYI7ZQPJlM9H+lElGpuh/JURVJR/NBE+p1JZ+sVE773Un4zQcagg==" crossorigin="anonymous"></script> 
 </body>
 </html>

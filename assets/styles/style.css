@@ -14,6 +14,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
@@ -258,7 +262,7 @@ h2 {
 }
 
 .search-input {
-  width: 75%;
+  width: 100%;
 }
 
 .search-input :focus {
@@ -274,6 +278,7 @@ h2 {
   cursor: pointer;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  text-decoration: none;
 }
 
 .search-button:hover {
@@ -383,8 +388,9 @@ h2 {
 
 .footer {
   background: #000;
-  padding: 2rem .3rem;
   color: #fff;
+  margin-bottom: 0;
+  padding-top: 2rem;
 }
 
 .footer-list {
@@ -436,7 +442,7 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 8px;
 }
 
 .footer-link:hover {
@@ -447,7 +453,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 2rem;
+  padding: 2rem .4rem;
 }
 
 .footer-middle-subscribe, .footer-middle-contact, .footer-middle-about {
@@ -476,7 +482,8 @@ h2 {
 
 .footer-middle-subscribe-input {
   width: 70%;
-  text-align: center;
+  background-color: #000;
+  border: 1px solid #666;
 }
 
 .footer-middle-subscribe-input:focus {
@@ -490,10 +497,11 @@ h2 {
   border: 1px solid #555;
   outline: none;
   padding: 5px;
+  color: #fff;
 }
 
 .footer-middle-subscribe-btn:hover {
-  color: #fff;
+  color: #eee;
 }
 
 .footer-middle-contact-main-color {
@@ -518,6 +526,8 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 1rem;
+  background-color: #1F1F1F;
+  padding: 2rem 1rem;
 }
 
 .footer-bottom-social-link {
@@ -623,6 +633,16 @@ h2 {
   margin-right: 4px;
 }
 
+.main-sign-up {
+  padding: 4rem 1.5rem;
+  border: 1px solid red;
+}
+
+.main-sign-up-heading {
+  text-align: center;
+  text-transform: capitalize;
+}
+
 .sign-up-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -698,10 +718,6 @@ h2 {
       justify-content: space-around;
 }
 
-.results-schools :not(:last-of-type) {
-  margin-bottom: 2rem;
-}
-
 .results-schools-school {
   height: 250px;
   width: 350px;
@@ -719,6 +735,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .results-schools-school-p {
@@ -939,9 +956,10 @@ h2 {
     padding: 10px;
     margin-bottom: .5rem;
     outline: none;
+    width: 70%;
   }
   .search-input :focus {
-    outline: none;
+    outline-color: #3d86ce;
   }
   .search-button {
     color: var(--text-white);
@@ -952,6 +970,7 @@ h2 {
     cursor: pointer;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
+    width: 20%;
   }
   .search-button:hover {
     background-color: var(--main-light);
@@ -1010,7 +1029,10 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1rem 1rem;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    padding: .5rem 4rem;
     color: #fff;
   }
   .middle-item img {
@@ -1036,6 +1058,79 @@ h2 {
     background-color: #222;
     color: #CCCFD7;
   }
+  .footer-link {
+    color: var(--text-white);
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: inherit;
+  }
+  .footer-link:hover {
+    color: #99A4A5;
+  }
+  .footer-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 2rem;
+  }
+  .footer-middle-subscribe, .footer-middle-contact, .footer-middle-about {
+    width: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-middle-heading {
+    text-transform: uppercase;
+  }
+  .footer-middle-subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer-middle-subscribe-input {
+    width: 80%;
+    text-align: center;
+  }
+  .footer-middle-subscribe-input:focus {
+    outline: none;
+    border: 1px solid #555;
+  }
+  .footer-middle-subscribe-btn {
+    background-color: #666;
+    cursor: pointer;
+    border: 1px solid #555;
+    outline: none;
+    padding: 5px;
+  }
+  .footer-middle-subscribe-btn:hover {
+    color: #fff;
+  }
+  .footer-middle-contact-main-color {
+    color: var(--main);
+  }
+  .footer-middle-para {
+    text-align: center;
+    font-size: 12px;
+  }
+  .footer-about-more-link {
+    color: var(--main);
+    text-decoration: none;
+  }
+  .sign-up-form-btns {
+    margin-top: .5rem;
+  }
+  .sign-up-form-btns .sign-in, .sign-up-form-btns .search-button {
+    cursor: pointer;
+    width: 22%;
+  }
   .results-heading {
     text-align: center;
     padding: 2rem 0;
@@ -1051,11 +1146,10 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-  }
-  .results-schools :not(:last-of-type) {
-    margin-bottom: 2rem;
   }
   .results-schools-school {
     height: 250px;
@@ -1103,6 +1197,98 @@ h2 {
   }
   .results-schools-school:hover > .results-schools-school-p, .results-schools-school:hover > .results-schools-school-more {
     display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .search-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #EEE;
+    padding: 2rem 1rem;
+  }
+  .search-form-title {
+    margin-bottom: 2rem;
+  }
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 75%;
+  }
+  .form-selection-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-label {
+    color: var(--text-darker);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: .5rem 0;
+  }
+  .form-input, .form-select {
+    padding: 7px;
+    margin-bottom: .5rem;
+  }
+  .form-input:focus, .form-select:focus {
+    outline-color: #6CABDE;
+  }
+  .form-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 17px;
+  }
+  .form-btn-info, .form-btn-warning {
+    padding: 6px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .form-btn-info {
+    background: #457DB4;
+    margin-right: 10px;
+  }
+  .form-btn-info:hover {
+    background: #3d86ce;
+  }
+  .form-btn-warning {
+    background: #E5AB5B;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form-btn-warning:hover {
+    background: #e9a23f;
+  }
+  .form-btn-warning-icon {
+    margin-right: 4px;
   }
 }
 /*# sourceMappingURL=style.css.map */

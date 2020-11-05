@@ -16,27 +16,30 @@
 
     <!-- iconify -->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    
+
+    <!-- introjs css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/3.0.1/introjs.min.css" integrity="sha512-fsq7ym+bMq7ecs277R2a3QDPxF+JIwNNnkPfj9rIKDUyqrbXDnICZj/cCLcP3bKh3+jsCBnBR7BZJShOmELL0Q==" crossorigin="anonymous" />
+
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Near School</title>
 </head>
-<body>
+<body onload="introJs().start()">
     <header class="header"> 
-        <nav class="nav-bar">
+        <nav class="nav-bar" data-intro="welcome to Near school website" data-step="1">
             <div class="logo"> <a href="#">
                 <img src="./assets/images/logo.png" alt="near school logo">
                </a> 
            </div>
             <ul class="nav-bar-list">
                 <li class="nav-bar-item">
-                    <a href="pages/search.html" class="nav-bar-link"> 
+                    <a href="search.html" data-intro="click here if want start searching schools near you" data-step="2" class="nav-bar-link"> 
                     <span class="iconify" data-icon="ant-design:search-outlined" data-inline="false"></span> 
                     <span class="sm-none">schools</span> 
                 </a>
             </li>
                 <li class="nav-bar-item">
-                    <a href="pages/signup.html" class="nav-bar-link"> 
+                    <a href="signup.html" data-intro="click here if you want to create an account or sign-in" data-step="3" class="nav-bar-link"> 
                         <span class="iconify" data-icon="bytesize:user" data-inline="false"></span> 
                         <span class="sm-none">about</span>
                     </a>
@@ -50,7 +53,7 @@
                 <li class="nav-bar-item"><a href="#main-menu"
                     class="menu-toggle nav-bar-link"
                     id="main-menu-toggle"
-                    aria-label="opens main menu">
+                    aria-label="opens main menu" data-intro="click here to know more" data-step="4">
                     <span class="iconify" data-icon="codicon:three-bars" aria-hidden="true" data-inline="false"></span>
                     </span> <span class="sm-none">more</span> 
                 </a>
@@ -74,6 +77,8 @@
           </nav>
           <a href="#main-menu-toggle" class="backdrop" hidden></a>
         <div class="header-content">
+
+            <a href="#" onclick="introJs().start()" style="z-index: 899;" class="start-tour">click here to start tour</a>
             <div class="header-content-video-container">
             <video class="header-content-media" src="./assets/media/Pexels Videos 1580507-1.m4v" muted loop="true", autoplay></video>
             </div>
@@ -86,7 +91,7 @@
 
                     <label for="search" class="search-label">search by keyword :</label>
                     <input type="text" id="search" class="search-input">
-                    <button class="search-button">search</button>
+                    <a href="search.html" class="search-button">search</a>
                 </div>
             </div>
 
@@ -290,5 +295,11 @@
         </div>
     </footer>
 
+    <!-- introjs js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/3.0.1/intro.min.js" integrity="sha512-Y3bwrs/uUQhiNsD26Mpr5YvfG18EY0J+aNxYI7ZQPJlM9H+lElGpuh/JURVJR/NBE+p1JZ+sVE773Un4zQcagg==" crossorigin="anonymous"></script> 
+    
+    <script>
+    document.onload = intro.Js().start();
+    </script>
 </body>
 </html>
