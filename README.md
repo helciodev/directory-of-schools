@@ -4,7 +4,8 @@
 # Near School project
 This project consists of me as student apply everything I learn so far in HTML and CSS to recreate design from real designers, adding some personal touch, and having the TSE as my client.
 
-[!](assets/images/screenshot.png)
+![screenshot](assets/images/screenshot.png)
+
 
 ## This project includes the following features:
 
