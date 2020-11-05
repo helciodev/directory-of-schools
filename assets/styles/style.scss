@@ -913,4 +913,112 @@ justify-content: flex-end;
 
 }
 
+// middle 
+.middle {
+    &-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem 1rem;
+        color: #fff;
+
+        img {
+            height: 11rem;
+            width: 11rem;
+            border-radius: 50%;
+        }
+    
+    }
+
+    &-action {
+        width:75%;
+    }
+    &-para {
+        margin-bottom: 1rem;
+    }
+   &-button {
+       background-color: #CCCFD7;
+       text-decoration: none;
+       color: var(--main);
+       padding: 10px;
+       transition: all .2s;
+
+       &:hover {
+        background-color: #222;
+        color:#CCCFD7;
+       }
+   }
+
+}
+
+// sign-up form 
+
+//results 
+
+.results {
+
+
+    &-heading {
+        text-align:center;
+        padding: 2rem 0;
+    }
+
+    &-schools {
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        :not(:last-of-type) {
+            margin-bottom: 2rem;
+        }
+
+        &-school {
+            height: 250px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items:center;
+            padding-bottom: 1rem;
+
+            
+            &-p {
+                @include text-white-center();
+                font-weight: bold;
+                transition: all .2s ease;
+                z-index: 4;
+                background: rgba(0,0,0,.90);
+                display: none;
+                height: 15%;
+                margin-bottom: 1rem;
+
+            }
+
+            
+           
+        &-more {
+            text-decoration: none;
+            background-color: var(--main);
+            padding: 6px;
+            color:#fff;
+            transition: all .2s;
+            display: none;
+
+            &:hover {
+             transform: translateY(2px);
+            }
+        }
+
+        &:hover > &-p, &:hover > &-more {
+            display: block;
+    }
+    } 
+
+}
+
+
+}
+
 }
