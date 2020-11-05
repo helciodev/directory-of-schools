@@ -592,7 +592,6 @@ h2 {
 
 .main-sign-up {
   padding: 4rem 1.5rem;
-  border: 1px solid red;
 
   &-heading {
     text-align: center;
@@ -1123,28 +1122,28 @@ h2 {
     padding: 1rem;
     flex-wrap: wrap;
     justify-content: flex-end;
-  
+
     &-item {
       border: 1px solid #999;
       margin-bottom: 0.5rem;
       padding: 0.5rem;
       text-align: center;
       width: 50%;
-  
+
       &-first,
       &-second {
         font-weight: bold;
       }
-  
+
       &-first {
         color: #333;
       }
-  
+
       &-second {
         color: #81b6e2;
       }
     }
-  
+
     &-btn {
       border-radius: 0;
       align-self: flex-end;
@@ -1232,7 +1231,4 @@ h2 {
       }
     }
   }
-
-  
-  
 }
