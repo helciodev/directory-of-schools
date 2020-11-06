@@ -674,6 +674,7 @@ h2 {
 
       &-p {
         @include text-white-center();
+
         font-weight: bold;
         transition: all 0.2s ease;
         z-index: 4;
@@ -750,12 +751,11 @@ h2 {
 
 .school-result {
   box-shadow:
-  0 0px 2.1px rgba(0, 0, 0, 0.036),
-  0 0px 5.8px rgba(0, 0, 0, 0.045),
-  0 0px 13.9px rgba(0, 0, 0, 0.051),
-  0 0px 46px rgba(0, 0, 0, 0.07)
-;
- width: 80%;
+    0 0 2.1px rgba(0, 0, 0, 0.036),
+    0 0 5.8px rgba(0, 0, 0, 0.045),
+    0 0 13.9px rgba(0, 0, 0, 0.051),
+    0 0 46px rgba(0, 0, 0, 0.07);
+  width: 80%;
 }
 
 .details {
@@ -797,42 +797,40 @@ h2 {
 }
 
 .click-more {
-  background: #F5F5F5;
+  background: #f5f5f5;
   padding: 10px 6px;
   width: 80%;
   margin-bottom: 3rem;
 
   h2 {
-    text-align:center;
-  }
-  
-  :hover {
-    background:  #dad5d5;
+    text-align: center;
   }
 
-  a {
+  :hover {
+    background: #dad5d5;
+  }
+
+  &-link {
     text-decoration: none;
+
     @include text-dark-center();
+
     font-size: 1rem;
 
-    :hover {
-      background:  #dad5d5;
+    &:hover {
+      background: #dad5d5;
     }
-
   }
-
-  
 }
 
 .school-location .how-works-heading {
-  padding: 10px; 
+  padding: 10px;
   text-align: center;
 }
 
 .school-location iframe {
-    width: 300px;
-    height: 250px;
-  
+  width: 300px;
+  height: 250px;
 }
 
 // media 768px
@@ -926,7 +924,7 @@ h2 {
       padding: 10px;
       margin-bottom: 0.5rem;
       outline: none;
-      width: 70%; 
+      width: 70%;
     }
 
     &-input :focus {
@@ -1032,6 +1030,7 @@ h2 {
   .footer {
     &-link {
       @include text-white-center;
+
       text-decoration: none;
       font-size: 14px;
 
@@ -1211,8 +1210,7 @@ h2 {
   .school-location iframe {
     width: 600px;
     height: 450px;
-  
-}
+  }
 }
 // media 768px end
 
@@ -1288,7 +1286,7 @@ h2 {
   }
 
   .results {
-     &-schools {
+    &-schools {
       &-school {
         height: 275px;
         width: 427px;
@@ -1299,5 +1297,5 @@ h2 {
   .school-location iframe {
     width: 960px;
     height: 450px;
-}
+  }
 }

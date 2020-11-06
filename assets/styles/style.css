@@ -827,8 +827,8 @@ h2 {
 }
 
 .school-result {
-  -webkit-box-shadow: 0 0px 2.1px rgba(0, 0, 0, 0.036), 0 0px 5.8px rgba(0, 0, 0, 0.045), 0 0px 13.9px rgba(0, 0, 0, 0.051), 0 0px 46px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 0px 2.1px rgba(0, 0, 0, 0.036), 0 0px 5.8px rgba(0, 0, 0, 0.045), 0 0px 13.9px rgba(0, 0, 0, 0.051), 0 0px 46px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 0 2.1px rgba(0, 0, 0, 0.036), 0 0 5.8px rgba(0, 0, 0, 0.045), 0 0 13.9px rgba(0, 0, 0, 0.051), 0 0 46px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0 2.1px rgba(0, 0, 0, 0.036), 0 0 5.8px rgba(0, 0, 0, 0.045), 0 0 13.9px rgba(0, 0, 0, 0.051), 0 0 46px rgba(0, 0, 0, 0.07);
   width: 80%;
 }
 
@@ -878,7 +878,7 @@ h2 {
 }
 
 .click-more {
-  background: #F5F5F5;
+  background: #f5f5f5;
   padding: 10px 6px;
   width: 80%;
   margin-bottom: 3rem;
@@ -892,7 +892,7 @@ h2 {
   background: #dad5d5;
 }
 
-.click-more a {
+.click-more-link {
   text-decoration: none;
   color: var(--text-darker);
   text-transform: uppercase;
@@ -901,7 +901,7 @@ h2 {
   font-size: 1rem;
 }
 
-.click-more a :hover {
+.click-more-link:hover {
   background: #dad5d5;
 }
 
