@@ -559,11 +559,12 @@ h2 {
 
   &-btn-info,
   &-btn-warning {
-    padding: 6px;
+    padding: 1px 4px;
     text-decoration: none;
     text-align: center;
     color: #fff;
     border-radius: 5px;
+    margin-top: 6px;
   }
 
   &-btn-info {
@@ -617,6 +618,7 @@ h2 {
     padding: 10px;
     background-color: #dee2e3;
     border: 1px solid #888;
+    text-transform: capitalize;
 
     &:focus {
       outline-color: aquamarine;
@@ -672,7 +674,6 @@ h2 {
 
       &-p {
         @include text-white-center();
-
         font-weight: bold;
         transition: all 0.2s ease;
         z-index: 4;
@@ -680,6 +681,7 @@ h2 {
         display: none;
         height: 15%;
         margin-bottom: 1rem;
+        padding: 6px 8px;
       }
 
       &-more {
@@ -703,23 +705,39 @@ h2 {
   }
 
   .school-1 {
-    background: url(../images/school-1.jpg);
+    background: url(../images/school-1-min.jpg);
     background-size: cover;
+    background-position: center center;
   }
 
   .school-2 {
-    background: url(../images/school-2.jpg);
+    background: url(../images/school-2-min.jpg);
     background-size: cover;
+    background-position: center center;
   }
 
   .school-3 {
-    background: url(../images/school-3.jpg);
+    background: url(../images/school-3-min.jpg);
     background-size: cover;
+    background-position: center center;
   }
 
   .school-4 {
-    background: url(../images/school-4.jpg);
+    background: url(../images/school-4-min.jpg);
     background-size: cover;
+    background-position: center center;
+  }
+
+  .school-5 {
+    background: url(../images/school-5-min.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .school-6 {
+    background: url(../images/school-6-min.jpg);
+    background-size: cover;
+    background-position: center center;
   }
 }
 
@@ -732,13 +750,12 @@ h2 {
 
 .school-result {
   box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.023),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.033),
-    0 12.5px 10px rgba(0, 0, 0, 0.041),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.048),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.057),
-    0 100px 80px rgba(0, 0, 0, 0.07);
-  width: 80%;
+  0 0px 2.1px rgba(0, 0, 0, 0.036),
+  0 0px 5.8px rgba(0, 0, 0, 0.045),
+  0 0px 13.9px rgba(0, 0, 0, 0.051),
+  0 0px 46px rgba(0, 0, 0, 0.07)
+;
+ width: 80%;
 }
 
 .details {
@@ -775,6 +792,44 @@ h2 {
 
 .result-info {
   margin-top: 4rem;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+
+.click-more {
+  background: #F5F5F5;
+  padding: 10px 6px;
+  width: 80%;
+  margin-bottom: 3rem;
+  
+  :hover {
+    background:  #dad5d5;
+  }
+
+  a {
+    text-decoration: none;
+    @include text-dark-center();
+    font-size: 1rem;
+
+    :hover {
+      background:  #dad5d5;
+    }
+
+  }
+
+  
+}
+
+.school-location .how-works-heading {
+  padding: 10px; 
+  text-align: center;
+}
+
+.school-location iframe {
+    width: 300px;
+    height: 250px;
+  
 }
 
 // media 768px
@@ -788,6 +843,7 @@ h2 {
     padding: 0.4rem 1rem;
 
     & .logo {
+      margin-top: 10px;
       width: 50%;
       text-align: left;
     }
@@ -867,7 +923,7 @@ h2 {
       padding: 10px;
       margin-bottom: 0.5rem;
       outline: none;
-      width: 70%;
+      width: 70%; 
     }
 
     &-input :focus {
@@ -973,9 +1029,8 @@ h2 {
   .footer {
     &-link {
       @include text-white-center;
-
       text-decoration: none;
-      font-size: inherit;
+      font-size: 14px;
 
       &:hover {
         color: #99a4a5;
@@ -1075,8 +1130,8 @@ h2 {
       justify-content: space-around;
 
       &-school {
-        height: 250px;
-        width: 350px;
+        height: 270px;
+        width: 355px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -1149,6 +1204,12 @@ h2 {
       align-self: flex-end;
     }
   }
+
+  .school-location iframe {
+    width: 600px;
+    height: 450px;
+  
+}
 }
 // media 768px end
 
@@ -1199,15 +1260,6 @@ h2 {
       margin-top: 17px;
     }
 
-    &-btn-info,
-    &-btn-warning {
-      padding: 6px;
-      text-decoration: none;
-      text-align: center;
-      color: #fff;
-      border-radius: 5px;
-    }
-
     &-btn-info {
       background: #457db4;
       margin-right: 10px;
@@ -1231,4 +1283,18 @@ h2 {
       }
     }
   }
+
+  .results {
+     &-schools {
+      &-school {
+        height: 275px;
+        width: 427px;
+      }
+    }
+  }
+
+  .school-location iframe {
+    width: 960px;
+    height: 450px;
+}
 }
