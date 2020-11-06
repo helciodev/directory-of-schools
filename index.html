@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=".assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href=".assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href=".assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href=".assets/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <!-- introjs css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/3.0.1/introjs.min.css" integrity="sha512-fsq7ym+bMq7ecs277R2a3QDPxF+JIwNNnkPfj9rIKDUyqrbXDnICZj/cCLcP3bKh3+jsCBnBR7BZJShOmELL0Q==" crossorigin="anonymous" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Near School</title>
+</head>
+<body onload="introJs().start()">
+    <header class="header"> 
+        <nav class="nav-bar" data-intro="welcome to Near school website" data-step="1">
+            <div class="logo"> <a href="#">
+                <img src="./assets/images/logo.png" alt="near school logo">
+               </a> 
+           </div>
+            <ul class="nav-bar-list">
+                <li class="nav-bar-item">
+                    <a href="search.html" data-intro="click here if you want to start searching schools near you" data-step="2" class="nav-bar-link"> 
+                    <span class="iconify" data-icon="ant-design:search-outlined" data-inline="false"></span> 
+                    <span class="sm-none">schools</span> 
+                </a>
+            </li>
+                <li class="nav-bar-item">
+                    <a href="signup.html" data-intro="click here    if you want to create an account or sign-in" data-step="3" class="nav-bar-link"> 
+                        <span class="iconify" data-icon="bytesize:user" data-inline="false"></span> 
+                        <span class="sm-none">about</span>
+                    </a>
+                </li>
+                <li class="nav-bar-item">
+                    <a href="#" class="nav-bar-link">
+                        <span class="iconify" data-icon="grommet-icons:blog" data-inline="false"></span>
+                      <span class="sm-none">blog</span> 
+                    </a>
+                </li>
+                <li class="nav-bar-item"><a href="#main-menu"
+                    class="menu-toggle nav-bar-link"
+                    id="main-menu-toggle"
+                    aria-label="opens main menu" data-intro="click here to know more" data-step="4">
+                    <span class="iconify" data-icon="codicon:three-bars" aria-hidden="true" data-inline="false"></span>
+                     <span class="sm-none">more</span> 
+                </a>
+            </li>
+            </ul>
+        </nav>
+        <nav id="main-menu" class="main-menu" aria-label="main menu">
+            <a
+              href="#main-menu-toggle"
+              class="menu-close"
+              aria-label="closes main menu"
+            >
+            <span class="iconify" data-icon="codicon:chrome-close" data-inline="false" aria-hidden="true"></span>
+            </a>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#HowItWorks">How it Works</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Know More</a></li>
+            </ul>
+          </nav>
+          <a href="#main-menu-toggle" class="backdrop" hidden></a>
+        <div class="header-content">
+
+            <div class="header-content-video-container">
+            <video class="header-content-media" src="./assets/media/kids-playing.m4v" muted loop autoplay></video>
+            </div>
+<div class="header-content-overlay"></div>
+            <div class="header-content-info">
+                <h1 class="header-content-heading">
+                    <span class="enterprise">near school</span> is the best place to find the near school for your kids around the world.
+                </h1>
+                <div class="search">
+
+                    <label for="search" class="search-label">search by keyword :</label>
+                    <input type="text" id="search" class="search-input">
+                    <a href="search.html" class="search-button">search</a>
+                </div>
+            </div>
+
+            <a href="#HowItWorks" class="header-content-button">How it Works</a>
+        </div>
+    </header>
+
+    <main class="main">
+<section class="how-works" id="HowItWorks">
+    <h2 class="how-works-heading">
+        Near school works in four simple ways
+    </h2>
+<!-- first  search-->
+        <div class="how-works-content">
+            <figure>
+                <img src="./assets/images/Searching.png" alt="search">
+            </figure>
+            <h3 class="how-works-heading-tertiary">
+                1-search:
+            </h3>
+            <p class="how-works-para">
+                It is simple. on Near school home page, enter the name of the school you are looking for and click on search, alternatively click on the search link on the top menu to get a list of all schools.
+            </p>
+        </div>
+        <!-- second locate -->
+        <div class="how-works-content">
+            <figure>
+                <img src="./assets/images/Landing-Success.png" alt="find">
+            </figure>
+            <h3 class="how-works-heading-tertiary">
+                2-locate:
+            </h3>
+            <p class="how-works-para">
+                Get to see where the school is located by clicking on the school profile. It is even more exciting. You can get the direction from anywhere in the world.
+            </p>
+        </div>
+        <!-- third apply -->
+        <div class="how-works-content">
+            <figure>
+                <img src="./assets/images/Folder-Data.png" alt="search">
+            </figure>
+            <h3 class="how-works-heading-tertiary">
+                3-apply:
+            </h3>
+            <p class="how-works-para">
+            Apply for your child's interview to school of your choice. Click on the APPLY button to get the aplication form. We also follow up the application to make sure you get a reply on time.
+            </p>
+        </div>
+        <!-- fourth done -->
+        <div class="how-works-content">
+            <figure>
+                <img src="./assets/images/Launching.png" alt="search">
+            </figure>
+            <h3 class="how-works-heading-tertiary">
+                4-done:
+            </h3>
+            <p class="how-works-para">
+                It is simple. on Near school home page, enter the name of the school you are looking for and click on search, alternatively click on the search link on the top menu to get a list of all schools.
+            </p>
+        </div>
+</section>
+       <div class="know-more">
+
+           <div class="middle-item middle-item-first">
+               <div class="middle-action ">
+                   <h4 class="middle-para">
+                       Over 10,000,000 schools registered with us
+                   </h4>
+                   <p class="middle-para">
+                       Find a school by using our filtered search engine
+                   </p>
+                   <a href="#" class="middle-button">
+                       find a school
+                   </a>
+               </div>
+               <figure><img src="./assets/images/pexels-agung-pandit-wiguna-3401403.jpg" alt="kids looking a computer"></figure>
+           </div>
+   
+           <div class="middle-item middle-item-second">
+               <div class="middle-action">
+                   <h4 class="middle-para">
+                       No need to travel unnecessary 
+                   </h4>
+                   <p class="middle-para">
+                       Just click in the search button and you are all set
+                   </p>
+                   <a href="#" class="middle-button">
+                   find nearest school
+                   </a>
+               </div>
+               <figure><img src="./assets/images/pexels-julia-m-cameron-4145354.jpg" alt="woman and kid"></figure>
+           </div>
+   
+           <div class="middle-item middle-item-third">
+               <div class="middle-action">
+                   <h4 class="middle-para">
+                       Anytime, anywhere, anyway!
+                   </h4>
+                   <p class="middle-para">
+                       A very convenient platform that is avaiable in any platform of your choice, including our mobile ready web app, what are you waiting for? "find the nears school for your child today!".
+                   </p>
+               </div>
+               <figure><img src="./assets/images/pexels-louis-1796505.jpg" alt="people"></figure>
+           </div>
+       </div>
+    </main>
+
+    <footer class="footer"> 
+        <ul class="footer-list">
+            <li class="footer-item">
+                <a href="#" class="footer-link">
+                    home
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="#" class="footer-link">
+                    search
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="#" class="footer-link">
+                    about
+                </a>
+            </li>
+            <li class="footer-item footer-ad">
+                <a href="#" class="footer-link">
+                    advertise
+                </a>
+            </li>
+            <li class="footer-item footer-logo">
+                <a href="#" class="footer-link">
+                    <img src="./assets/images/pin-1.png" alt="pin representing near school logo ">
+                </a>
+            </li>
+            <li class="footer-item footer-fb">
+                <a href="#" class="footer-link">
+                    facebook
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="#" class="footer-link">
+                    twiiter
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="#" class="footer-link">
+                    blog
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="#" class="footer-link">
+                    google &plus;
+                </a>
+            </li>
+        </ul>
+
+        <div class="footer-middle">
+            <div class="footer-middle-subscribe">
+                <h4 class="footer-middle-heading">subscribe</h4>
+                <div class="footer-middle-subscribe-form">
+                    <input type="text" placeholder="yourname@youremail.com" class="footer-middle-subscribe-input">
+                    <button type="submit" class="footer-middle-subscribe-btn">send</button>
+                </div>
+            </div>
+            <div class="footer-middle-contact">
+                <h4 class="footer-middle-heading">contact</h4>
+                <p class="footer-middle-para">have a question or doubt</p>
+                <p class="footer-middle-contact-main-color">near@theschool.com</p>
+            </div>
+
+            <div class="footer-middle-about">
+                <h4 class="footer-middle-heading">about</h4>
+                <p class="footer-middle-para">
+                    Near school is an online platform that allows the user to find the nearest school on his current location in the world, through our partnership with more than 10 millions schools all over the world <a href="#" class="footer-about-more-link">learn more...</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-social">
+                <a href="#" class="footer-bottom-social-link">
+                    <span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span>
+                </a>
+                <a href="#" class="footer-bottom-social-link">
+                    <span class="iconify" data-icon="carbon:logo-twitter" data-inline="false"></span>
+                </a>
+                <a href="#" class="footer-bottom-social-link" aria-label="">
+                    <span class="iconify" data-icon="entypo:mail" data-inline="false"></span>
+                </a>
+                <a href="#" class="footer-bottom-social-link">
+                    <span class="iconify" data-icon="vaadin:google-plus" data-inline="false"></span>
+                </a>
+                <a href="#" class="footer-bottom-social-link">
+                    <span class="iconify" data-icon="bx:bxl-youtube" data-inline="false"></span>
+                </a>
+            </div>
+
+            <div class="footer-bottom-copy">
+                <span class="footer-botom-copyright">&copy; Near school 2020 all rights reserved</span>
+                <span class="footer-bottom-madeby">made with ♥ DEVBRAND</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- introjs js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/3.0.1/intro.min.js" integrity="sha512-Y3bwrs/uUQhiNsD26Mpr5YvfG18EY0J+aNxYI7ZQPJlM9H+lElGpuh/JURVJR/NBE+p1JZ+sVE773Un4zQcagg==" crossorigin="anonymous"></script> 
+    
+    <script>
+    document.onload = intro.Js().start();
+    </script>
+</body>
+</html>
