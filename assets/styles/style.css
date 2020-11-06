@@ -884,6 +884,10 @@ h2 {
   margin-bottom: 3rem;
 }
 
+.click-more h2 {
+  text-align: center;
+}
+
 .click-more :hover {
   background: #dad5d5;
 }
