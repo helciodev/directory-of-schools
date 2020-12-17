@@ -24,7 +24,7 @@ This project consists of me as a student from Microverse applying, everything I 
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/helciodev/directory-of-schools/e9e98b3488d2f9d53fee9a9eb4ebc463ffcd7fae/index.html)
+[Live Demo Link](https://helciodev.github.io/directory-of-schools/)
 
 **See the page via the link above**
 
