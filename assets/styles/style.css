@@ -320,6 +320,7 @@ h2 {
 .how-works-content img {
   width: 6rem;
   height: 6rem;
+  object-fit: cover;
 }
 
 .how-works-heading-tertiary {
